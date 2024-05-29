@@ -1,3 +1,22 @@
+
+
+/*
+    std::stack
+*/
+stack.emplace() // replace stack.push()
+
+stack<pair<int, int>> stk;
+stk.push({1, 2});
+stk.emplace(1, 2);
+
+
+
+
+    
+
+/* 
+    std::priority
+*/
 auto cmp = [](const T& a, const T& b) {
     // 自定义的比较规则
 };
@@ -13,3 +32,5 @@ auto cmp = [](const pair<int, int>& a, const pair<int, int>& b) {
     return a.second > b.second;
 };
 priority_queue<pair<int, int>, std::vector<pair<int, int>>, decltype(cmp)> pq(cmp);
+
+
